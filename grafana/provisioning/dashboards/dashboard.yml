@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: "Updo dashboards"
+    orgId: 1
+    folder: "Updo"
+    type: file
+    disableDeletion: false
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards

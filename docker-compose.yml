@@ -50,6 +50,12 @@ services:
     networks:
       - updo_net
 
+  blackbox:
+    image: prom/blackbox-exporter:latest
+    container_name: blackbox
+    ports:
+      - "9115:9115"
+
 networks:
   updo_net:
 

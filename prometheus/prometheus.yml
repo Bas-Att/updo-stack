@@ -12,7 +12,7 @@ scrape_configs:
     static_configs:
       - targets: ['prometheus:9090']
 
-  - job_name: 'blackbox-http'
+  - job_name: 'blackbox'
     metrics_path: /probe
     params:
       module: [http_200]  # ตรวจสอบว่าได้ HTTP 200
